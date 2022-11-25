@@ -6,7 +6,7 @@ internal class Program
     {
         Employee func1 = new Employee();
 
-       
+
         Console.WriteLine("Digite Seu nome: ");
         func1.Name = Console.ReadLine();
         Console.WriteLine("Seu Nome: " + func1.Name);
@@ -16,8 +16,17 @@ internal class Program
         Console.WriteLine("Digite Seu Salario: " + func1.Salary);
 
 
+
+
+
         Console.Read();
 
+        List<Employee> list = new List<Employee>();
+
+        foreach (var item in employees)
+        {
+            Console.WriteLine(item.Name);
+        }
 
     }
 }
